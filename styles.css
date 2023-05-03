@@ -10,6 +10,8 @@
     --contact-footer-color: #011F5B;
 
     --navbar-text-color: rgb(235,235,235);
+
+    --coffee-cup-color: rgb( 230,230,230);
 }
 
 * {
@@ -71,6 +73,58 @@ body {
     background-color: var(--navbar-color);
     margin-top: -3px;
     border-radius: 50%;;
+}
+
+.coffee-animation {
+    width: 20px;
+    height: 20px;
+    background-color: var(--coffee-cup-color);
+    position: relative;
+    margin-top: -35px;
+    margin-left: 140px;
+    border-radius: 40% 40% 80% 80%;
+}
+
+
+.coffee {
+    width: 12px;
+    height: 2px;
+    background-color: #6f4e37;
+    display: relative;
+    margin-left: 4px;
+    margin-top: 1px;
+    margin-bottom: 0;
+    border-radius: 100%;
+}
+
+.handle {
+    height: 8px;
+    width: 6px;
+    background-color: var(--coffee-cup-color);
+    display: relative;
+    margin-left: 20px;
+    margin-top: 3px;
+    border-radius: 0 40% 40% 0;
+}
+
+.handle-gap {
+    background-color: var(--navbar-color);
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    display: relative;
+    margin-top: -6px;
+    margin-left: 21px;
+}
+
+.espresso-plate {
+    background-color: var(--coffee-cup-color);
+    width: 30px;
+    height: 5px;
+    display: relative;
+    margin-top: 6px;
+    margin-left: -4px;
+    border-radius: 100%;
 }
 
 #navbar ul {
