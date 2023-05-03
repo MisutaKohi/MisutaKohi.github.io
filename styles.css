@@ -8,6 +8,8 @@
     --second-page-color: #990000;
     --third-page-color: rgb( 230,230,230);
     --contact-footer-color: #011F5B;
+
+    --navbar-text-color: rgb(235,235,235);
 }
 
 * {
@@ -39,10 +41,36 @@ body {
     align-items: center;
 }
 
-#navbar h2 {
+.navbar-right {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar h2 {
     margin: 0 0 0 20px;
-    color: white;
+    color: var(--navbar-text-color);
+    display: relative;
+    z-index: 2;
+}
+
+#smile {
+    height: 18px;
+    width: 35px;
+    background-color: var(--navbar-text-color);
+    display: absolute;
+    border-radius: 50%;
+    margin-left: 85px;
+    margin-top: -6px;
+    z-index: -1;
+}
+
+#smile div {
+    height: 16px;
+    width: 35px;
+    background-color: var(--navbar-color);
+    margin-top: -3px;
+    border-radius: 50%;;
 }
 
 #navbar ul {
@@ -50,7 +78,7 @@ body {
     height: 100%;
     margin: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: right;
 }
 
 #navbar li {
@@ -58,11 +86,12 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
+    margin-right: 20px
 }
 
 #navbar a {
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: var(--navbar-text-color);
     text-decoration: none;
     padding: 10px;
     margin-top: 0;
@@ -74,7 +103,7 @@ body {
 }
 
 #welcome {
-    height: 100vh;
+    height: calc(100vh - 70px);
     width: 100%;
     margin-top: 70px;
     background-color: var(--first-page-color);
