@@ -4,14 +4,14 @@
 
 :root {
     --navbar-color: rgb(20,20,20);
-    --first-page-color: #4d5940;
-    --second-page-color: #9aa989;
-    --third-page-color: #81946b;
-    --contact-footer-color: #4d5940;
+    --first-page-color: #011F5B;
+    --second-page-color: #990000;
+    --third-page-color: rgb( 230,230,230);
+    --contact-footer-color: #011F5B;
 }
 
 * {
-    border-radius: box-border;
+    border-width: box-border;
     scroll-behavior: smooth;
 }
 
@@ -29,7 +29,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(160,160,160);
 }
 
 #navbar {
@@ -77,11 +77,23 @@ body {
     height: 100vh;
     width: 100%;
     margin-top: 70px;
-    text-align: center;
     background-color: var(--first-page-color);
     position: relative;
     z-index: -1;
     color: rgb(230,230,230);
+}
+
+.welcome-text {
+    width: 80%;
+    height: 80%;
+    margin: auto auto;
+    display: table;
+}
+
+.welcome-text div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
 
 #project {
