@@ -2,8 +2,17 @@
 
 }
 
+:root {
+    --navbar-color: rgb(20,20,20);
+    --first-page-color: #4d5940;
+    --second-page-color: #9aa989;
+    --third-page-color: #81946b;
+    --contact-footer-color: #4d5940;
+}
+
 * {
     border-radius: box-border;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -15,7 +24,7 @@ body {
 .nav-wrap {
     width: 100%;
     height: 70px;
-    background-color:#98A886;
+    background-color: var(--navbar-color);
     z-index: 100;
     position: fixed;
     top: 0;
@@ -32,7 +41,8 @@ body {
 
 #navbar h2 {
     width: 50%;
-    margin: 0;
+    margin: 0 0 0 20px;
+    color: white;
 }
 
 #navbar ul {
@@ -55,10 +65,12 @@ body {
     color: white;
     text-decoration: none;
     padding: 10px;
+    margin-top: 0;
+    transition: margin-top .2s ease-in-out 0s;
 }
 
 #navbar a:hover {
-    background-color: black;
+    margin-top: -10px;
 }
 
 #welcome {
@@ -66,7 +78,7 @@ body {
     width: 100%;
     margin-top: 70px;
     text-align: center;
-    background-color: #404a36;
+    background-color: var(--first-page-color);
     position: relative;
     z-index: -1;
     color: rgb(230,230,230);
@@ -75,9 +87,12 @@ body {
 #project {
     height: 100vh;
     width: 100%;
-    border: 2px purple solid;
     text-align: center;
-    background-color: #f2f4f0;
+    background-color: var(--second-page-color)
+}
+
+#project h2 {
+    margin: 0;
 }
 
 #project-gallery {
@@ -85,9 +100,15 @@ body {
     height: 90%;
 }
 
+#academics {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--third-page-color);
+}
+
 #contact-me {
     width: 100%;
     height: 60px;
-    background-color: #000000;
+    background-color: var(--contact-footer-color);
     color: white;
 }
