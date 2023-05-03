@@ -21,23 +21,34 @@ body {
     height: 100vh;
     width: 100%;
     border: 2px solid red;
+    margin-top: -72px;
+    text-align: center;
+}
+
+#welcome h1 {
+    margin-top: 300px;
 }
 
 #project {
     height: 100vh;
     width: 100%;
     border: 2px purple solid;
+    text-align: center;
 }
 
-.project-formatting {
-    display: flex;
-}
 
 #slideout {
     border: 2px green solid;
     width: 50%;
     height: 60%;
-    
+    right: -45%;
+    position: absolute;
+    transition: right .25s ease 0s;
+
+}
+
+#slideout:active {
+    right: -2%;
 }
 
 #contact-me {
