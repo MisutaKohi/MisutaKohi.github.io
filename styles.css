@@ -5,13 +5,15 @@
 :root {
     --navbar-color: rgb(20,20,20);
     --first-page-color: #011F5B;
+    --first-page-fade: rgba(230, 230, 230, .1);
+
     --second-page-color: #990000;
     --third-page-color: rgb( 230,230,230);
     --contact-footer-color: #011F5B;
 
-    --navbar-text-color: rgb(235,235,235);
+    --text-color: rgb(235,235,235);
 
-    --coffee-cup-color: rgb( 230,230,230);
+    --coffee-cup-color: rgb(230,230,230);
 }
 
 * {
@@ -51,7 +53,7 @@ body {
 
 #navbar h2 {
     margin: 0 0 0 20px;
-    color: var(--navbar-text-color);
+    color: var(--text-color);
     display: relative;
     z-index: 2;
 }
@@ -59,7 +61,7 @@ body {
 #smile {
     height: 18px;
     width: 35px;
-    background-color: var(--navbar-text-color);
+    background-color: var(--text-color);
     display: absolute;
     border-radius: 50%;
     margin-left: 85px;
@@ -81,7 +83,7 @@ body {
     background-color: var(--coffee-cup-color);
     position: relative;
     margin-top: -35px;
-    margin-left: 140px;
+    margin-left: 145px;
     border-radius: 40% 40% 80% 80%;
 }
 
@@ -145,7 +147,7 @@ body {
 
 #navbar a {
     font-family: 'Poppins', sans-serif;
-    color: var(--navbar-text-color);
+    color: var(--text-color);
     text-decoration: none;
     padding: 10px;
     margin-top: 0;
@@ -160,7 +162,9 @@ body {
     height: calc(100vh - 70px);
     width: 100%;
     margin-top: 70px;
-    background-color: var(--first-page-color);
+    background: linear-gradient(0deg, 
+        var(--second-page-color) 0%, 
+        var(--first-page-color) 5%);
     position: relative;
     z-index: -1;
     color: rgb(230,230,230);
@@ -183,7 +187,9 @@ body {
     height: 100vh;
     width: 100%;
     text-align: center;
-    background-color: var(--second-page-color)
+    background: linear-gradient(0deg, 
+        var(--third-page-color) 0%, 
+        var(--second-page-color) 5%);
 }
 
 #project h2 {
@@ -206,4 +212,45 @@ body {
     height: 60px;
     background-color: var(--contact-footer-color);
     color: white;
+    border-top: var(--second-page-color) 4px solid;
+    display: flex;
+    align-items: center;
+}
+
+#contact-me p {
+    margin-left: 30px;
+    font-family: Tahoma, sans-serif;
+    margin-right: 30px;
+    border: 2px gold solid;
+    width: 130px;
+}
+
+#contact-me ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+
+#contact-me ul li {
+    list-style: none;
+    margin-left: 40px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+#contact-me a {
+    color:var(--text-color);
+    text-decoration: none;
+    margin-top: 0px;
+    display: relative;
+    padding: 10px;
+    transition: margin-top .2s ease-in-out 0s;
+}
+
+#contact-me a:hover {
+    margin-top: -10px;
 }
