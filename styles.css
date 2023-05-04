@@ -1,6 +1,6 @@
 /* Page 2 responsiveness */
 @media (max-width: 578px) {
-    #project {
+    #projects {
         height: 1375px !important;
     }
 
