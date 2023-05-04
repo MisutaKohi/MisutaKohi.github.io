@@ -275,7 +275,7 @@ body {
 
 #academics {
     width: 100%;
-    height: 100vh;
+    height: 675px;
     background-color: var(--third-page-color);
     text-align: center;
     padding: 20px;
@@ -283,28 +283,36 @@ body {
 
 #academics h2 {
     text-decoration: underline;
-    margin: 0;
+    margin: 20px 0 30px 0;
 }
 
-#academics p {
-    margin-right: 40px;
-    border: 2px purple solid;
+#academics > p {
+    margin: 0 auto 30px auto;
+    max-width: 800px;
+    text-align: left;
 }
 
 .masters-wrap {
     display: flex;
+    flex-direction: row;
     gap: 50px;
     justify-content: center;
 }
 
 .master {
-    width: 40%;
-    height: 600px;
-    border: 2px gold solid;
+    width: 350px;
+    height: 400px;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+}
+
+.master p {
+    text-align: left;
+    padding: 10px;
 }
 
 .master h3 {
-    border: 2px gray solid;
+    border-bottom: 2px black solid;
     margin-top: 0;
     padding: 10px;
     background-color: var(--shading);
