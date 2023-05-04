@@ -16,6 +16,7 @@
     --coffee-cup-color: rgb(230,230,230);
 
     --shading: rgb(190,190,190);
+    --dark-shading: rgb(48,56,65);
 }
 
 * {
@@ -95,7 +96,6 @@ body {
     margin-left: 145px;
     border-radius: 40% 40% 80% 80%;
 }
-
 
 .coffee {
     width: 12px;
@@ -213,7 +213,7 @@ body {
 
 #project-gallery {
     width: 90%;
-    max-width: 600px;
+    max-width: 800px;
     height: 80%;
     display: flex;
     flex-direction: row;
@@ -221,7 +221,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    border: 2px green solid;
     margin: 25px auto 0 auto;
 }
 
@@ -229,27 +228,37 @@ body {
     width: 250px;
     height: 275px;
     border: 2px black solid;
-    background-color: var(--third-page-color);
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
 }
 
-.project-img {
-    width: 100%;
-    height: 230px;
+.project-tile img {
     object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 235px;
+    margin: 0;
+    padding: 0;
 }
 
-.project-tile h4 {
-    background-color: rgb(48,56,65);
-    height: 38px;
-    padding-top: 7px;
-    margin-top: 0;
-    border-top: 2px black solid;
+.project-tile p {
+    height: 37px;
+    margin: -3px 0 0 0;
+    padding-top: 5px;
+    width: 100%;
+    background-color: var(--dark-shading);
+    border-top: black solid 4px;
+    overflow: hidden;
+    
+    color: var(--text-color);
 }
+
 
 #project button {
     width: 125px;
     margin-top: 25px;
-    background-color:rgb(48,56,65);
+    background-color: var(--dark-shading);
     height: 35px;
     border: 2px black solid;
 }
@@ -258,13 +267,6 @@ body {
     width: 100%;
     height: 100%;
     font-size: 1.3em;
-    text-decoration: none;
-    color: var(--text-color);
-}
-
-.project-link {
-    width: 100%;
-    height: 100%;
     text-decoration: none;
     color: var(--text-color);
 }
