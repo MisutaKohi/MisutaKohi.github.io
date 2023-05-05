@@ -46,6 +46,10 @@ body {
     width: 100vw;
 }
 
+.emphasize {
+    color: yellow;
+}
+
 /* NavBar */ 
 
 .nav-wrap {
