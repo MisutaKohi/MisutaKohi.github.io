@@ -83,10 +83,6 @@ body {
     z-index: 2;
 }
 
-.eye {
-    color: var(--shading);
-}
-
 #smile {
     height: 18px;
     width: 35px;
