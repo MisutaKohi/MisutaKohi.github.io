@@ -81,6 +81,7 @@ body {
     color: var(--text-color);
     display: relative;
     z-index: 2;
+    font-family: Lobster;
 }
 
 #smile {
